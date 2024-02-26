@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="cricketGame.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Bat Ball Stump Game</h1>
+      <button
+        class="buttons"
+        onclick="
+
+      //This will generate random number between 0 and 3
+      let randomNumber = Math.random() * 3;
+      let computerChoice;
+
+      if (randomNumber > 0 && randomNumber <= 1)
+      {computerChoice = 'Bat'} 
+
+      else if (randomNumber > 1 && randomNumber <= 2)
+      {computerChoice = 'Ball'} 
+
+      else{computerChoice = 'Stump'}
+      
+
+      let resultMsg;
+      if(computerChoice === 'Ball')
+      {resultMsg = 'User Win'}
+        
+        else if (computerChoice === 'Bat')
+      {resultMsg = `It's a tie`}
+      
+      else if (computerChoice === 'Stump')
+      {resultMsg = 'Computer has win'}
+      
+      alert(`You have chosen Bat. Computer Choice is ${computerChoice} and ${resultMsg}`)
+      "
+      >
+        Bat
+      </button>
+
+      <button class="buttons">Ball</button>
+      <button class="buttons">Stump</button>
+    </main>
+
+    <script></script>
+  </body>
+</html>
